@@ -1,17 +1,20 @@
 public abstract class Pokemon {
     protected String name;
-    private Integer hp;
+    private int hp;
+    private int attackPower;
 
-    public Pokemon(String name, int hp) {
+    public Pokemon(String name, int hp, int attackPower) {
         this.name = name;
         this.hp = hp;
+        this.attackPower = attackPower;
     }
 
-    public String getName() {
-        return name;
-    }
-    public int getHP() {
-        return hp;
-    }
+    public String getName() { return name; }
+    public int getHP() { return hp; }
     public abstract void attack(Pokemon target);
+
+    @Override
+    public String toString() {
+        return name + "(hp : " + hp + " AttackPower : " + attackPower + ')';
+    }
 }

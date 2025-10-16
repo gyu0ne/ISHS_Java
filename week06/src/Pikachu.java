@@ -1,6 +1,6 @@
 public class Pikachu extends Pokemon {
-    public Pikachu(int hp) {
-        super("피카츄", hp); // 부모 클래스에 생성자 호출
+    public Pikachu(int hp, int attackPower) {
+        super("피카츄", hp, attackPower); // 부모 클래스에 생성자 호출
         System.out.println("PikaPika");
     }
 
