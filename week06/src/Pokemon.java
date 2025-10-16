@@ -18,8 +18,19 @@ public abstract class Pokemon {
         this.hp = hp;
     }
 
+    public void recieveDamage(int Damage) {
+        hp = hp - Damage;
+        if (hp <= 0) {
+            hp = 0;
+        }
+    }
+
+    public boolean isFainted() {
+        return hp <= 0;
+    }
+
     @Override
     public String toString() {
-        return name + "(hp : " + hp + " AttackPower : " + attackPower + ')';
+        return name + "(HP : " + hp + " AttackPower : " + attackPower + ')';
     }
 }

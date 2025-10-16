@@ -5,8 +5,10 @@ public class GameDemo {
         Squirtle someonesSquirtle = new Squirtle(120, 21);
         System.out.println("game start");
         myPikachu.attack(yourPikachu);
+        for (int i=0; i<5; i++) {
+            someonesSquirtle.attack(myPikachu);
+        }
         yourPikachu.attack(someonesSquirtle);
-        someonesSquirtle.attack(myPikachu);
 
         System.out.println(myPikachu);
         System.out.println(yourPikachu);
