@@ -1,0 +1,17 @@
+public abstract class Pokemon {
+    protected String name;
+    private Integer hp;
+
+    public Pokemon(String name, int hp) {
+        this.name = name;
+        this.hp = hp;
+    }
+
+    public String getName() {
+        return name;
+    }
+    public int getHP() {
+        return hp;
+    }
+    public abstract void attack(Pokemon target);
+}
