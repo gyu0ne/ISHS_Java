@@ -22,7 +22,7 @@ public abstract class Pokemon {
 
     public void setFlyingTool(Flyable flyingTool) { this.flyingTool = flyingTool; }
 
-    public void performFlyable() { this.flyingTool.fly(); }
+    public void performFlyable() { this.flyingTool.fly(this); }
 
     public void recieveDamage(int Damage) {
         hp = hp - Damage;
