@@ -20,12 +20,8 @@ public class ExceptionTest {
             System.out.println(numerator/denominator);
         } catch (InputMismatchException err) {
             System.out.println("숫자로 입력하셈");
-        }
-
-        if (denominator == 0) {
+        } catch (ArithmeticException err) {
             System.out.println("분모는 0이 될 수 없으셈");
-        } else {
-            System.out.println(numerator/denominator);
         }
     }
 }
