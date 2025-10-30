@@ -1,10 +1,16 @@
-import java.security.cert.TrustAnchor;
+import fly.NoFly;
+import fly.Wings;
+import pokemons.Charizard;
+import pokemons.Pikachu;
+import pokemons.Pokemon;
+import pokemons.Squirtle;
+
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class GameDemo {
     public static void main(String[] args) {
-//        Pokemon playerPokemon = null;
+//        pokemons.Pokemon playerPokemon = null;
         Pokemon playerPokemon = new Pikachu(100, 27, new NoFly());
 
         Scanner scanner = new Scanner(System.in);
@@ -47,18 +53,18 @@ public class GameDemo {
             enemyPokemon = new Charizard(200, 40, new Wings());
         }
 
-//        Jetpack jetpack = new Jetpack();
+//        fly.Jetpack jetpack = new fly.Jetpack();
 //
-//        Pikachu P1 = new Pikachu(100, 27, new NoFly());
-////        P1.setFlyingTool(new NoFly());
+//        pokemons.Pikachu P1 = new pokemons.Pikachu(100, 27, new fly.NoFly());
+////        P1.setFlyingTool(new fly.NoFly());
 //        P1.performFlyable();
 //        P1.setFlyingTool(jetpack);
 //        P1.performFlyable();
 //
-////        Pikachu P2 = new Pikachu(100, 28);
-////        Squirtle S1 = new Squirtle(120, 21);
-//        Charizard C1 = new Charizard(200, 40, new Wings());
-////        C1.setFlyingTool(new Wings());
+////        pokemons.Pikachu P2 = new pokemons.Pikachu(100, 28);
+////        pokemons.Squirtle S1 = new pokemons.Squirtle(120, 21);
+//        pokemons.Charizard C1 = new pokemons.Charizard(200, 40, new fly.Wings());
+////        C1.setFlyingTool(new fly.Wings());
 //        C1.performFlyable();
 //
 //        System.out.println("전투 시작!");
