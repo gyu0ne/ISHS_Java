@@ -26,9 +26,8 @@ public class GameDemo {
         };
 
         pokemons.Pokemon playerPokemon = null;
-//        Pokemon playerPokemon = new Pikachu(100, 27, new NoFly());
-
         Scanner scanner = new Scanner(System.in);
+
         while (true) {
             try {
                 System.out.print("스타팅 포켓몬 선택\n(1 : 피카츄, 2 : 꼬부기, 3 : 리자몽) : ");
@@ -74,6 +73,12 @@ public class GameDemo {
         for(int i=0; i<playerPokemon.skills.length; i++) {
             System.out.println((i+1) + ". " + playerPokemon.skills[i].getName() + " (" + playerPokemon.skills[i].getDamage() + ")");
         }
+
+        System.out.print("Select Skill : ");
+        int skillNumber = scanner.nextInt() - 1;
+
+        enemyPokemon.setHp(enemyPokemon.getHP() - playerPokemon.skills[skillNumber].getDamage());
+        System.out.println(enemyPokemon.getName() + "의 체력은 " + enemyPokemon.getHP() + "이 남았습니다.");
 
 //        int turn = 1;
 //
