@@ -80,6 +80,7 @@ public class GameDemo {
             int skillNumber = scanner.nextInt() - 1;
 
             playerPokemon.attack(enemyPokemon, skillNumber);
+            enemyPokemon.attack(playerPokemon, (int)(Math.random() * 3));
 
             if (enemyPokemon.isFainted() || playerPokemon.isFainted()) {
                 break;
